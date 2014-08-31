@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>GDG DevFest Brasil 2014</title>
+
+  <meta name="viewport" 
+  content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <script src="./components/platform/platform.js">
+  </script>
+
+  <link rel="import" href="./components/font-roboto/roboto.html">
+  <link rel="import" href="./components/core-header-panel/core-header-panel.html">
+  <link rel="import" href="./components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="./components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="./components/google-map/google-map.html">
+
+  <link rel="stylesheet" href="./styles/main.css"/>
+
+</head>
+
+<body unresolved>
+
+  <core-header-panel>
+
+    <core-toolbar>
+      <paper-tabs id="tabs" selected="all" self-end>
+        <paper-tab name="all">DevFest Brasil 2014</paper-tab>
+      </paper-tabs>
+    </core-toolbar>
+
+    <!-- main page content will go here -->
+    <google-map latitude="-14.2400732" longitude="-53.1805017"  minZoom="5" maxZoom="11" zoom="5" fit>
+      <google-map-marker latitude="-10.976712" longitude="-37.040825"
+                         title="DevFest Nordeste" draggable="false" icon="./img/gdg-marker.png">
+        <p><img src="./img/devfestne.png" /></p>
+        <p>18/10/2014, em Aracaju. Acesse: <a href="http://ne.devfest.com.br/">ne.devfest.com.br</a></p>
+      </google-map-marker>
+    </google-map>
+    
+  </core-header-panel>
+
+</body>
+
+</html>
